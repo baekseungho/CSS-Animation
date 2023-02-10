@@ -6,7 +6,7 @@
 
 .health-box {
   display: flex;
-  width: 80%;
+  width: 70%;
   margin: 50px auto;
   height: 600px;
 }
@@ -16,6 +16,7 @@
   position: relative;
   padding-top: 30px; 
   transition: all 400ms ease-in-out;
+  flex-grow: 1;
 }
 
 .img-box h2{
@@ -46,17 +47,14 @@
 
 #cross-fit {
   background-color: #283491;
-  flex-grow: 1; 
 }
 
 #tranining {
   background-color: #f18684;
-  flex-grow: 1; 
 }
 
 #yoga {
   background-color: #6ee2f1;
-  flex-grow: 1; 
 }
 
 .hidden{
@@ -77,22 +75,15 @@
   text-align: center;
 }
 
-#cross-fit:hover,
-#tranining:hover,
-#yoga:hover{
-  flex-grow: 2;
+.img-box:hover{
+  flex-grow: 1.8;
 }
 
-#cross-fit:hover h2,
-#tranining:hover h2,
-#yoga:hover h2
-{
+.img-box:hover h2 {
   left: 20px;
   transform: translateX(0);
 }
 
-#cross-fit:hover .hidden,
-#tranining:hover .hidden,
-#yoga:hover .hidden {
+.img-box:hover .hidden {
   display: block;
 }
